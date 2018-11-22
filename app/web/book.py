@@ -61,8 +61,8 @@ def book_detail(isbn):
                                 launched=False).first():
             has_in_wishes = True
 
-    trade_gifts = Gift.query.filter_by(isbn=isbn, llaunched=False).all()
-    trade_wishes = Wish.query.filter_by(isbn=isbn, llaunched=False).all()
+    trade_gifts = Gift.query.filter_by(isbn=isbn, launched=False).all()
+    trade_wishes = Wish.query.filter_by(isbn=isbn, launched=False).all()
 
     trade_sishes_model = TradeInfo(trade_wishes)
     trade_gifts_model = TradeInfo(trade_gifts)
