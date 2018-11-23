@@ -15,7 +15,7 @@ from flask_login import login_required, current_user
 @web.route('/my/gifts')
 @login_required
 def my_gifts():
-    return '123'
+    return '此页面未完成'
 
 
 @web.route('/gifts/book/<isbn>')
