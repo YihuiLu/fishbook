@@ -14,7 +14,7 @@ def send_drift(gid):
 
 @web.route('/pending')
 def pending():
-    pass
+    return '敬请期待'
 
 
 @web.route('/drift/<int:did>/reject')

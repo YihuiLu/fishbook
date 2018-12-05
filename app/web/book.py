@@ -47,7 +47,7 @@ def search():
 def book_detail(isbn):
     has_in_gifts = False
     has_in_wishes = False
-
+    #  TODO: 赠送和索要书籍用户列表显示不正常，待解决
     #  取书籍的详情数据
     yushu_book = YuShuBook()
     yushu_book.search_by_isbn(isbn)
